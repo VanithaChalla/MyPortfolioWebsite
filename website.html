@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanitha Challa</title>
+    <link rel="stylesheet" href="website.css">
+    <script src="https://kit.fontawesome.com/7f6fb0d6ea.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pictures/Logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CyberSecurity Analyst Enthusiast| Ethical Hacker</p>
+                <h1>Hey!!, I'm <span>Vanitha</span><br> from Hyderabad </h1>
+            </div>
+        </div>
+    </div> 
+    <!---------------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pictures/Aboutimg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a final year B.Tech student at Bharat Institute of Engineering and Technology, I've developed a strong foundation in programming, problem-solving, and network security. With proficiency in Python and Java, I'm passionate about cybersecurity and dedicated to proactively addressing emerging threats. Through self-guided learning and hands-on projects, I've honed my skills in ethical hacking. I'm eager to contribute to the dynamic field of cybersecurity and confident in my ability to fortify online presence. My strong analytical mindset and continuous learning approach position me as a valuable asset in safeguarding sensitive information and ensuring robust cybersecurity measures. I'm excited to connect with fellow cybersecurity professionals and explore collaborative opportunities for a safer digital future.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('technical skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('soft skills')">Soft Skills</p>
+  
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Bharat Institute of Engineering and Technology</span><br>Mangalpally, Hydrerabad- B.Tech<br>2020-2024<br>Aggregate: 70%</li>
+                            <li><span>Sri Chaitanya Junior College</span><br>Chaitanyapuri, Hydrerabad- Intermediate<br>2018-2020<br>Aggregate: 95%</li>
+                            <li><span>Naagarjuna High School</span><br>BN Reddy Nagar, Hydrerabad-SSC<br>2018<br>Aggregate: 88%</li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="technical skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python<br>Power Shell<br>Bash/Shell Scripting <br>Java</li>
+                            <li><span>Security</span><br>Network Security<br>Ethical hacking<br>Penetration testing<br>Secure Coding<br>Application Security</li>
+                           <li><span>Operating Systems</span><br>Windows<br>Linux<br>Macos</li> 
+                           <li>Data Structures</li>
+                           <li><span>Databases</span><br></br>MYSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="soft skills">
+                        <ul>
+                            <li>Communication</li>
+                            <li>Problem-Solving</li>
+                            <li>Critical Thinking</li>
+                            <li>Leadership</li>
+                            <li>Time Management</li>
+                            <li>Ethics and integrity</li>
+                            <li>Risk Management</li>
+                            <li>Presentation Skills</li>
+                        </ul>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+        </div>
+        <!---------------------projects---------- -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="projects-list"></div>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <h2>Keyloggers Software</h2>
+                        <p>The Keylogger Software project is a cybersecurity tool designed to capture and log keystrokes, trackpad inputs, and mouse events on a computer system. This enables users to monitor and analyze user activity, providing valuable insights for security and investigative purposes.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <h2>Anti-Keyloggers Software</h2>
+                        <p>Handling......<br>The "GuardianShield" anti-keylogger software is a cutting-edge cybersecurity solution meticulously engineered to detect and thwart unauthorized attempts at recording keystrokes, ensuring robust protection against potential breaches and safeguarding sensitive information.</p>
+                       
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-fingerprint"></i>
+                        <h2>User Authentication System</h2>
+                        <p>Processing......<br>This project implements a user-friendly security system that verifies user identities through unique graphical passwords, providing a visually intuitive and effective means of access authentication.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+<!----------------services--------------->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div class="service">
+                <img src="pictures/service1.png">
+                <div class="layer">
+                    <h3>Website Security</h3>
+                    <p> Provide comprehensive security assessments for websites, identifying vulnerabilities and implementing measures to safeguard against threats like SQL injection, and other common attacks.</p>
+                    
+                </div>
+            </div>
+            <div class="service">
+                <img src="pictures/service2.jpg">
+                <div class="layer">
+                    <h3>Password Management</h3>
+                    <p>Implementing robust password policies and secure management solutions to safeguard sensitive credentials and enhance overall digital security.</p>
+                    
+                </div>
+            </div>
+            <div class="service">
+                <img src="pictures/services3.jpeg">
+                <div class="layer">
+                    <h3>Endpoint Security and Protection</h3>
+                    <p>Offer services to secure devices such as laptops, desktops, and mobile phones from a range of cyber threats, including malware, keyloggers, phishing attacks, and other malicious software.</p>
+                  
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!-------------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>ChallaVanitha10@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8309377349</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vanithachalla"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/vanithareddie?t=GmUn6XhSPsirrKG9JBKmTA&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="pictures/ChallaVanitha_Resume.pdf" download class="btn btn2">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit </button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div class="logout-container">
+    <form action="login.html" method="post">
+        <button type="submit" class="logout-button">Logout</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz4l5R8eugfJrcnB_LHUbLiaZa06hW99eGwm50vVKvmi6i4RzK_C6ghSHGAt43U3-wVrA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML=" Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+
+        </script>
+</body>
+</html>

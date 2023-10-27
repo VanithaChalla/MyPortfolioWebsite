@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form action="login.html" method="post" onsubmit="return loginUser()">
+
+            <div id="message" style="display: none;"></div>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <div>
+                <div class="password-box" id="password-box"></div>
+                <div id="symbol-container">
+                    <!-- Symbol boxes will be generated here -->
+                </div>
+            </div>
+            <input type="hidden" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+        </form>
+        <p class="redirect-link">Don't have an account? <a href="index.html" style="color: black;">Register here</a>.</p>
+    </div>
+
+    <script>
+        function addSymbol(symbol) {
+            var passwordBox = document.getElementById("password-box");
+            var passwordInput = document.getElementById("password");
+
+            // Add the symbol to the password box
+            passwordBox.innerHTML += "<span class='symbol-box'>" + symbol + "</span>";
+
+            // Append the symbol to the password input field
+            passwordInput.value += symbol;
+        }
+
+        function shuffleSymbols() {
+            var symbols = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "{", "}", "[", "]", "/", "\\", "|", ":", ";", ".", ","];
+            var symbolContainer = document.getElementById("symbol-container");
+
+            // Shuffle the symbols randomly
+            for (var i = symbols.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                [symbols[i], symbols[j]] = [symbols[j], symbols[i]];
+            }
+
+            // Generate symbol boxes in 5 rows and 4 columns
+            for (var i = 0; i < 5; i++) {
+                var row = document.createElement("div");
+                row.className = "symbol-row";
+                for (var j = 0; j < 4; j++) {
+                    var symbolIndex = i * 4 + j;
+                    if (symbolIndex < symbols.length) {
+                        var symbolBox = document.createElement("span");
+                        symbolBox.className = "symbol-box";
+                        symbolBox.textContent = symbols[symbolIndex];
+                        symbolBox.onclick = function() {
+                            addSymbol(this.textContent);
+                        };
+                        row.appendChild(symbolBox);
+                    }
+                }
+                symbolContainer.appendChild(row);
+            }
+        }
+
+        // Call shuffleSymbols on page load
+        window.onload = shuffleSymbols;
+
+      
+    function displayMessage(message) {
+        var messageElement = document.getElementById("message");
+        messageElement.innerHTML = message;
+        messageElement.style.display = "block";
+
+        setTimeout(function() {
+            messageElement.style.display = "none";
+            location.reload();
+        }, 5000); // Hide message after 5 seconds
+    }
+
+
+
+    </script>
+
+</body>
+</html>
