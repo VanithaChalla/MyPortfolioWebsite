@@ -22,9 +22,7 @@ $username = $_SESSION['username'];
     <h1>Welcome, <?php echo $username; ?>!</h1>
     <p>Email: <?php echo $email; ?></p>
 
-    <!-- Add more content for your dashboard page -->
-
-    <!-- Add a logout button -->
+    
     <a href="website.html" class="btn">Click here </a>
 </body>
 </html>
